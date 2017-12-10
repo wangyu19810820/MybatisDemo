@@ -1,16 +1,14 @@
 package com.main;
 
-import com.dao.CompanyCustomMapper;
-import com.dao.CompanyMapper;
 import com.model.Company;
 import com.service.CompanyService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Spring+Mybatis的技术验证Demo
+ * 一个Dao对应两个Mapper，与Spring相结合的技术验证Demo
  */
-public class Demo6 {
+public class Demo8 {
 
     public static void main(String[] args) {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:spring.xml");

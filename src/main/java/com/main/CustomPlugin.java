@@ -7,6 +7,9 @@ import org.apache.ibatis.plugin.*;
 import java.sql.Statement;
 import java.util.Properties;
 
+/**
+ * 最简单的Mybatis插件，实现Interceptor，在类名前添加注解
+ */
 @Intercepts({
    @Signature(type = StatementHandler.class, method = "parameterize", args = Statement.class)
 })

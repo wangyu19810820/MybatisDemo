@@ -8,6 +8,9 @@ import org.apache.ibatis.reflection.SystemMetaObject;
 import java.sql.Statement;
 import java.util.Properties;
 
+/**
+ * Mybatis插件，通过MetaObject获取和设置参数
+ */
 @Intercepts({
         @Signature(type = StatementHandler.class, method = "parameterize", args = Statement.class)
 })

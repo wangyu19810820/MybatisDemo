@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+/**
+ * 验证PageHelper是否线程安全
+ */
 public class Demo4 {
 
     private static SqlSessionFactory sqlSessionFactory;

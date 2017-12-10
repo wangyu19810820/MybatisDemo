@@ -2,7 +2,9 @@ package com.dao;
 
 import com.model.Company;
 
-public interface CompanyCustomMapper extends CompanyMapper {
+import java.util.List;
+
+public interface CompanyCustomMapper extends BaseMapper {
 
     Company selectSecondCompany();
 }

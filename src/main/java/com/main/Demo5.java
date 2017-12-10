@@ -10,6 +10,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 一个Dao对应两个Mapper的技术验证Demo
+ */
 public class Demo5 {
 
     public static void main(String[] args) throws IOException {

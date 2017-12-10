@@ -13,6 +13,10 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.Properties;
 
+/**
+ * Java公版通用字段的技术验证Demo
+ * 在insert，update的时候，修改参数
+ */
 @Intercepts({
         @Signature(type = StatementHandler.class, method = "parameterize", args = Statement.class)
 })

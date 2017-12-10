@@ -10,6 +10,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * Java公版通用字段，利用插件赋值的验证Demo
+ */
 public class Demo7 {
 
     public static void main(String[] args) throws IOException {

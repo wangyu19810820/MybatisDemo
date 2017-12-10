@@ -10,6 +10,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 通过Mapper来调用Mybatis，用于debug，Mybatis的运作流程
+ */
 public class Demo3 {
 
     public static void main(String[] args) throws IOException {

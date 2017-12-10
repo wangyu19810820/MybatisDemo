@@ -12,14 +12,15 @@ public class CompanyService {
     @Autowired
     private CompanyCustomMapper companyCustomMapper;
 
-    @Autowired
-    private CompanyMapper companyMapper;
+//    @Autowired
+//    private CompanyMapper companyMapper;
 
     public Company getCompany(Integer i) {
-        return companyMapper.selectByPrimaryKey(i);
+        return companyCustomMapper.selectByPrimaryKey(i);
     }
 
     public Company getSecondCompany() {
+//        return null;
         return companyCustomMapper.selectSecondCompany();
     }
 }
