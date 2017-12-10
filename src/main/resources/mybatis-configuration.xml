@@ -9,6 +9,15 @@
         <setting name="logImpl" value="LOG4J2" />
     </settings>
 
+    <plugins>
+        <plugin interceptor="com.main.CustomPlugin">
+            <property name="abc" value="xyz"></property>
+        </plugin>
+
+        <plugin interceptor="com.main.CustomPlugin1">
+        </plugin>
+    </plugins>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
