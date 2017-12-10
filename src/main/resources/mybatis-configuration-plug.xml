@@ -10,15 +10,7 @@
     </settings>
 
     <plugins>
-        <!--<plugin interceptor="com.main.CustomPlugin">-->
-            <!--<property name="abc" value="xyz"></property>-->
-        <!--</plugin>-->
-
-        <!--<plugin interceptor="com.main.CustomPlugin1">-->
-        <!--</plugin>-->
-
-        <plugin interceptor="com.github.pagehelper.PageInterceptor">
-            <!--<property name="dialect" value="mysql"/>-->
+        <plugin interceptor="com.main.CustomPlugin2">
         </plugin>
 
     </plugins>

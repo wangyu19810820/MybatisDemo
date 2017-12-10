@@ -10,12 +10,17 @@
     </settings>
 
     <plugins>
-        <plugin interceptor="com.main.CustomPlugin">
-            <property name="abc" value="xyz"></property>
+        <!--<plugin interceptor="com.main.CustomPlugin">-->
+            <!--<property name="abc" value="xyz"></property>-->
+        <!--</plugin>-->
+
+        <!--<plugin interceptor="com.main.CustomPlugin1">-->
+        <!--</plugin>-->
+
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--<property name="dialect" value="mysql"/>-->
         </plugin>
 
-        <plugin interceptor="com.main.CustomPlugin1">
-        </plugin>
     </plugins>
 
     <environments default="development">
@@ -32,6 +37,7 @@
 
     <mappers>
         <mapper resource="com/mapper/CompanyMapper.xml"/>
+        <mapper resource="com/mapper/CompanyCustomMapper.xml"/>
     </mappers>
 
 </configuration>
