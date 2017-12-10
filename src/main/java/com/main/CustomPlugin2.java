@@ -30,7 +30,7 @@ public class CustomPlugin2 implements Interceptor {
         MetaObject metaObject = SystemMetaObject.forObject(target);
         StatementHandler statementHandler = (StatementHandler)metaObject.getValue("delegate");
         // 实际StatementHandler类型是预处理或普通，则执行
-        if (statementHandler instanceof PreparedStatementHandler || statementHandler instanceof SimpleStatementHandler) {
+        if (statementHandler instanceof PreparedStatementHandler) {
 //            获取参数对象，用反射设置值
 //            Object company = metaObject.getValue("parameterHandler.parameterObject");
 
