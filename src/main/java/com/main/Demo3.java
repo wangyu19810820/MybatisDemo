@@ -1,8 +1,10 @@
 package com.main;
 
+import com.dao.CompanyCustomMapper;
 import com.dao.CompanyMapper;
 import com.model.Company;
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -21,8 +23,12 @@ public class Demo3 {
         SqlSessionFactory sqlSessionFactory =
                 new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        CompanyMapper mapper = sqlSession.getMapper(com.dao.CompanyMapper.class);
+        CompanyCustomMapper mapper = sqlSession.getMapper(com.dao.CompanyCustomMapper.class);
+
         Company company = mapper.selectByPrimaryKey(1);
+        mapper.selectByExampleWithRowbounds(null, new RowBounds(1, 2));
+        mapper.selectCompanyByRowBound(new RowBounds(1, 2));
+
         sqlSession.close();
 
         System.out.println(mapper);

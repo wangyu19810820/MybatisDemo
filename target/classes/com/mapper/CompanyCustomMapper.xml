@@ -4,6 +4,10 @@
 
     <select id="selectSecondCompany" resultMap="BaseResultMap">
         SELECT * FROM company WHERE id = 2
-
     </select>
+
+    <select id="selectCompanyByRowBound" resultMap="BaseResultMap">
+        SELECT * FROM company
+    </select>
+
 </mapper>
